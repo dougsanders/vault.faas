@@ -25,6 +25,14 @@
 #   unused-packages = true
 
 
+[[constraint]]
+  name = "github.com/google/uuid"
+  version = "1.1.0"
+
 [prune]
   go-tests = true
   unused-packages = true
+
+[[constraint]]
+  name = "gopkg.in/src-d/go-git.v4"
+  version = "4.8.1"
