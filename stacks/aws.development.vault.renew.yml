@@ -2,7 +2,7 @@ provider:
   name: faas
   gateway: https://faas.awsdev.onetechnologies.net
 functions:
-  renew:
+  faas-vault-renew:
     lang: go
     handler: ./faas-vault-renew
     image: 782753031576.dkr.ecr.us-east-1.amazonaws.com/faas-vault-renew:latest
