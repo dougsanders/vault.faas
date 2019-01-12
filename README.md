@@ -12,3 +12,9 @@ dep ensure -add github.com/openfaas-incubator/go-function-sdk
 faas build -f ./stacks/aws.development.vault.renew.yml
 faas push -f ./stacks/aws.development.vault.renew.yml
 faas deploy -f ./stacks/aws.development.vault.renew.yml
+
+
+faas build -f ./vault-renew.yml
+docker tag vault-renew:latest dsanders1663/vault-renew:latest
+faas push -f ./vault-renew.yml
+faas deploy -f ./vault-renew.yml
