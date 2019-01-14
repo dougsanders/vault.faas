@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:31112
+functions:
+  git-file-retrieve:
+    lang: go
+    handler: ./git-file-retrieve
+    image: dsanders1663/git-file-retrieve:latest
+    secrets:
+    - ci-github-credentials

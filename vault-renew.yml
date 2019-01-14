@@ -5,6 +5,6 @@ functions:
   vault-renew:
     lang: go
     handler: ./vault-renew
-    image: dsanders1663/vault-renew:0.0.1
+    image: dsanders1663/vault-renew:latest
     secrets:
     - ci-github-credentials
