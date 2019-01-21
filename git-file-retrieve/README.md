@@ -16,8 +16,7 @@ This function will log into a git repository and return the contents of files th
 
 JSON
 
-*Example*
-`
+`json
 {
     "files": [
         {
