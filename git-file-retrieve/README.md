@@ -16,7 +16,7 @@ This function will log into a git repository and return the contents of files th
 
 JSON
 
-`json
+```json
 {
     "files": [
         {
@@ -25,7 +25,7 @@ JSON
         }
     ]
 }
-`
+```
 
 ## Credentials
 
@@ -36,7 +36,7 @@ This function expects there to be a generic Kubernetes secret to be setup named 
 
 *Before*
 
-`
+```
 apiVersion: v1
 kind: Secret
 metadata:
@@ -47,11 +47,11 @@ metadata:
   selfLink: /api/v1/namespaces/openfaas-fn/secrets/example
   uid: 54b40cf4-1da2-11e9-bdc5-025000000001
 type: Opaque
-`
+```
 
 *After*
 
-`
+```
 apiVersion: v1
 data:
   password: << ADD BASE64 ENCODED VALUE HERE >>
@@ -65,5 +65,5 @@ metadata:
   selfLink: /api/v1/namespaces/openfaas-fn/secrets/example
   uid: 54b40cf4-1da2-11e9-bdc5-025000000001
 type: Opaque
-`
+```
 
