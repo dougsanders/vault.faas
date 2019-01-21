@@ -5,19 +5,16 @@ This function wraps [SOPS](https://github.com/mozilla/sops) allowing a user to t
 ## Usage
 
 *HTTP*
+
 `curl -X POST -d '-i [ AWS KEY ID ] -s [ AWS SECRET KEY ] "[ SOPS DOCUMENT CONTENTS ]"' http://127.0.0.1:31112/function/kms-decrypt`
 
 *CLI*
+
 `faas invoke -g http://127.0.0.1:31112 kms-decrypt '-i [ AWS KEY ID ] -s [ AWS SECRET KEY ] "[ SOPS DOCUMENT CONTENTS ]"'`
 
 ## Response
 
-JSON
-
-*Example*
-`
-
-`
+The response will be the JSON equivalent of the decrypted YAML file.
 
 ## Credentials
 

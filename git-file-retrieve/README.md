@@ -5,9 +5,11 @@ This function will log into a git repository and return the contents of files th
 ## Usage
 
 *HTTP*
+
 `curl -X POST -d '{"repoUrlHttp":"https://github.com/somerepo.git", "pathRegex":"somepath\/.*"}' http://127.0.0.1:31112/function/git-file-retrieve`
 
 *CLI*
+
 `faas invoke -g http://127.0.0.1:31112 git-file-retrieve '{"repoUrlHttp":"https://github.com/somerepo.git", "pathRegex":"somepath\/.*"}'`
 
 ## Response
@@ -34,6 +36,7 @@ This function expects there to be a generic Kubernetes secret to be setup named 
 `kubectl edit secret ci-github-credentials -n openfaas-fn`
 
 *Before*
+
 `
 apiVersion: v1
 kind: Secret
@@ -48,6 +51,7 @@ type: Opaque
 `
 
 *After*
+
 `
 apiVersion: v1
 data:
