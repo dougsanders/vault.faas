@@ -32,6 +32,7 @@ JSON
 This function expects there to be a generic Kubernetes secret to be setup named "ci-github-credentials".  The secret must contain values for "username" and "password"
 
 `kubectl create secret generic ci-github-credentials -n openfaas-fn`
+
 `kubectl edit secret ci-github-credentials -n openfaas-fn`
 
 *Before*
